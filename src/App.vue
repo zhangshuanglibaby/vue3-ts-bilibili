@@ -1,4 +1,5 @@
 <template>
+  <van-button type="primary" />
   <router-view />
 </template>
 

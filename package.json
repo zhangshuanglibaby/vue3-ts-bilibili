@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "vant": "^3.6.5",
     "vue": "^3.2.13",
     "vue-router": "^4.1.6"
   },
@@ -27,6 +28,7 @@
     "eslint-plugin-vuejs-accessibility": "^1.1.0",
     "less": "^4.0.0",
     "less-loader": "^8.0.0",
-    "typescript": "~4.5.5"
+    "typescript": "~4.5.5",
+    "unplugin-vue-components": "^0.22.9"
   }
 }
