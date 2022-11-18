@@ -14,5 +14,9 @@ module.exports = {
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'vue/multi-word-component-names': 'off',
+    semi: 0, // 去掉分号
+    'comma-dangle': 0, // 去掉逗号
+    'linebreak-style': ["error", "windows"]
   },
 };
