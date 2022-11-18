@@ -45,3 +45,15 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
     ```
 5. 下载vant3ui框架， 使用按需进入组件样式方式
     在vue.config.js中配置插件，复制vant3文档的内容即可
+6. 下载postcss-px-to-viewport 插件将px单位转成视口单位
+    增加postcss.config.js文件设置。注意exclude不要忽视node_modules文件，防止vant样式失效,由于开发时ui设计稿是按照750px来发开的，
+    但是vant组件库的设计稿是按375来开发的，因此设置viewportWidth为750px时会出现转换问题
+    因此需要动态的设置viewportWidth 要特别注意vue2 和 vue3的写法不同
+    vue2 是解构webpack出来
+    ```
+    const designWidth =  webpack.resourcePath.includes(path.join('node_modules', 'vant')) ? 375 : 750
+    ```
+    vue3是解构file出来
+    ```
+    const designWidth = file.includes(path.join('node_modules', 'vant')) ? 375 : 750;
+    ```
