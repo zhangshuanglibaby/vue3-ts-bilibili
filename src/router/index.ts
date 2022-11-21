@@ -1,3 +1,9 @@
+/*
+ * @Date: 2022-11-21 20:30:56
+ * @LastEditors: zhangshuangli
+ * @LastEditTime: 2022-11-21 20:36:50
+ * @Description: 这是****文件
+ */
 // 路由相关文件
 
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
