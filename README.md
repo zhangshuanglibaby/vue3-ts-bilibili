@@ -23,7 +23,7 @@ npm run lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-###初始化结构
+## 初始化结构
 1. assets下新增styles、images文件夹
     styles新增base.css iconfont
 2. src下新增views文件夹、router、stores文件夹
@@ -35,7 +35,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
     在.eslintrc.js中的rules加入'vue/multi-word-component-names': 'off'关闭命名规则
     在App.vue中使用router-view展示路由页面
 4. 项目中的ts文件引入了vue文件，会报'...不是模块'，是因为ts无法解析vue结尾的文件
-    在src目录下，新建 vue.d.ts 引入以下代码
+    在src目录下，新建 env.d.ts 引入以下代码
     ```
     declare module '*.vue' {
         import { DefineComponent } from 'vue'
@@ -57,3 +57,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
     ```
     const designWidth = file.includes(path.join('node_modules', 'vant')) ? 375 : 750;
     ```
+
+## 开发旅程
+1. 在component文件下，新增一个app-header文件
