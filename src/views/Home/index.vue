@@ -7,10 +7,13 @@
 <template>
   <!-- 头部组件 -->
   <AppHeader />
+  <!-- 频道组件 -->
+  <HomeChannel />
 </template>
 
 <script setup lang="ts">
 import AppHeader from '@/components/appHeader.vue'
+import HomeChannel from '@/views/Home/components/HomeChannel.vue'
 </script>
 
 <style lang="less"></style>
