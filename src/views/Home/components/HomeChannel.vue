@@ -4,8 +4,9 @@
   </van-tabs>
 </template>
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import navList from '@/mock/data/navList'
+// import axios from 'axios'
 
 const active = ref(0)
 // TS 的接口
@@ -15,6 +16,13 @@ interface INavItem {
 }
 // 定义list的格式
 const list = ref<INavItem[]>([])
+// const getNavList = async () => {
+//   const res = axios({ url: '/navList', method: 'get'})
+//   console.log(res, 'res')
+// }
+onMounted(() => {
+  // getNavList
+})
 list.value = navList
 </script>
 

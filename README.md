@@ -64,3 +64,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 3. 增加mock模拟数据
     npm install mockjs  
     npm i @types/mockjs
+4. 下载axios   npm install axios
