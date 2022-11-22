@@ -60,3 +60,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## 开发旅程
 1. 在component文件下，新增一个app-header文件
+2. 在views文件夹下得Home文件新增components文件夹，编写homeChannel组件
+3. 增加mock模拟数据
+    npm install mockjs  
+    npm i @types/mockjs

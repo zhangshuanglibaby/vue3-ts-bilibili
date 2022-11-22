@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@types/mockjs": "^1.0.7",
     "core-js": "^3.8.3",
     "mockjs": "^1.1.0",
     "vant": "^3.6.5",
