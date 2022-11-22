@@ -1,3 +1,9 @@
+/*
+ * @Date: 2022-11-22 21:41:57
+ * @LastEditors: zhangshuangli
+ * @LastEditTime: 2022-11-22 22:10:14
+ * @Description: 这是****文件
+ */
 import Mock from 'mockjs'
 // 数据
 import navList from './data/navList'
@@ -13,44 +19,14 @@ Mock.setup({
   timeout: '50-1000'
 })
 
-Mock.mock('/navList', 'get', () => {
-  return {
-    code: 0,
-    result: navList
-  }
-})
+Mock.mock('/navList', 'get', { code: 0, result: navList })
 
-Mock.mock('/swiperList', 'get', () => {
-  return {
-    code: 0,
-    result: swiperList
-  }
-})
+Mock.mock('/swiperList', 'get', { code: 0, result: swiperList })
 
-Mock.mock('/videosList', 'get', () => {
-  return {
-    code: 0,
-    result: videosList
-  }
-})
+Mock.mock('/videosList', 'get', { code: 0, result: videosList })
 
-Mock.mock('/recommendList', 'get', () => {
-  return {
-    code: 0,
-    result: recommendList
-  }
-})
+Mock.mock('/recommendList', 'get', { code: 0, result: recommendList })
 
-Mock.mock('/commentsList', 'get', () => {
-  return {
-    code: 0,
-    result: commentsList
-  }
-})
+Mock.mock('/commentsList', 'get', { code: 0, result: commentsList })
 
-Mock.mock('/videoDetailList', 'get', () => {
-  return {
-    code: 0,
-    result: videoDetailList
-  }
-})
+Mock.mock('/videoDetailList', 'get', { code: 0, result: videoDetailList })

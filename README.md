@@ -1,3 +1,9 @@
+<!--
+ * @Date: 2022-11-22 21:41:57
+ * @LastEditors: zhangshuangli
+ * @LastEditTime: 2022-11-22 22:27:03
+ * @Description: 这是****文件
+-->
 # my-vue3-ts-bilibili
 
 ## Project setup
@@ -64,4 +70,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 3. 增加mock模拟数据
     npm install mockjs  
     npm i @types/mockjs
+    在main.ts中引入mock
 4. 下载axios   npm install axios
