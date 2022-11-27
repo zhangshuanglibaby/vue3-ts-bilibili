@@ -1,7 +1,7 @@
 <!--
  * @Date: 2022-11-26 19:23:05
  * @LastEditors: zhangshuangli
- * @LastEditTime: 2022-11-27 14:54:38
+ * @LastEditTime: 2022-11-27 22:04:43
  * @Description: 这是****文件
 -->
 <template>
@@ -15,7 +15,7 @@
 import { ref, onMounted } from 'vue'
 import axios from 'axios';
 import AppVideoItem from '@/components/AppVideoItem.vue'
-import { IVideoItem } from './constant'
+import { IVideoItem } from '@/views/Video/types'
 
 const list = ref<IVideoItem[]>([])
 const getList = async () => {

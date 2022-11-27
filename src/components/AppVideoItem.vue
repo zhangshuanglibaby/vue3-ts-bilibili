@@ -1,11 +1,11 @@
 <!--
  * @Date: 2022-11-26 19:32:04
  * @LastEditors: zhangshuangli
- * @LastEditTime: 2022-11-27 14:57:39
+ * @LastEditTime: 2022-11-27 22:04:34
  * @Description: 这是****文件
 -->
 <template>
-  <router-link class="v-card" to="" @click="hanldeJump">
+  <router-link class="v-card" :to="`/video/${video.id}`" @click="hanldeJump">
     <div class="card">
       <div class="card-img-wrap">
         <img class="card-img" :src="video.imgSrc" alt="">
@@ -28,7 +28,7 @@
 import {
   defineProps, defineEmits, PropType, onMounted
 } from 'vue'
-import { IVideoItem } from '@/views/Home/components/constant'
+import { IVideoItem } from '@/views/Video/types'
 // 父传子的值需要通过defineProps接收
 const propsData = defineProps({
   video: {
@@ -50,7 +50,7 @@ const hanldeJump = () => {
 .v-card {
   width: 50%;
   padding: 10px;
-  font-size: 12px;
+  font-size: 24px;
   .card {
     position: relative;
     background: #f3f3f3 url('~@/assets/images/default.png') center no-repeat;

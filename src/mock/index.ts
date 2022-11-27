@@ -1,7 +1,7 @@
 /*
  * @Date: 2022-11-22 21:41:57
  * @LastEditors: zhangshuangli
- * @LastEditTime: 2022-11-22 22:10:14
+ * @LastEditTime: 2022-11-27 20:21:41
  * @Description: 这是****文件
  */
 import Mock from 'mockjs'
@@ -29,4 +29,19 @@ Mock.mock('/recommendList', 'get', { code: 0, result: recommendList })
 
 Mock.mock('/commentsList', 'get', { code: 0, result: commentsList })
 
-Mock.mock('/videoDetailList', 'get', { code: 0, result: videoDetailList })
+interface IMockConfig {
+  body: string | null
+  type: string
+  url: string
+}
+Mock.mock(/\/videoDetail/, 'get', ({ url }: IMockConfig) => {
+  console.log(url, 'rurl')
+  const queryStr = url.split('?')[1]
+  // new URLSearchParams 可以巧妙的处理url的参数
+  const queryObj = new URLSearchParams(queryStr)
+  const id = queryObj.get('id')
+  return Mock.mock({
+    code: 0,
+    result: () => videoDetailList.find((item) => item.id === id)
+  })
+})

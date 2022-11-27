@@ -1,7 +1,7 @@
 <!--
  * @Date: 2022-11-22 21:41:57
  * @LastEditors: zhangshuangli
- * @LastEditTime: 2022-11-27 17:22:14
+ * @LastEditTime: 2022-11-27 22:50:32
  * @Description: 这是****文件
 -->
 # my-vue3-ts-bilibili
@@ -77,3 +77,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 6. 开发首页视频列表 home-video-list
    抽离app-video-item组件
 7. 开发搜索页面 写了search-top组件 image-mian组件
+8. 开发视频页面 将页面分割成视频播放组件videoPlay、视频详情videoDetail、标签栏videoChannel、
+   推荐视频组件videoRecommend、评论组件videoComment
+   这里有用到内置组件component，注意要将引入的组件使用markRow将数据标记为不追踪的数据，否则脚手架会报警告
