@@ -1,7 +1,7 @@
 <!--
  * @Date: 2022-11-21 20:30:56
  * @LastEditors: zhangshuangli
- * @LastEditTime: 2022-11-21 22:27:37
+ * @LastEditTime: 2022-11-27 17:00:45
  * @Description: 这是****文件
 -->
 <template>
@@ -11,7 +11,8 @@
       <i class="iconfont icon-bilibili"></i>
     </div>
     <!-- 搜索 -->
-    <div class="search">
+    <!-- eslint-disable-next-line -->
+    <div class="search" @click="handleJump">
       <i class="iconfont icon-sousuo"></i>
     </div>
     <!-- 头像 -->
@@ -27,9 +28,16 @@
   </header>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useRouter } from 'vue-router'
 
-<style lang="less">
+const myRouter = useRouter()
+const handleJump = () => {
+  myRouter.push({ path: '/search' })
+}
+</script>
+
+<style scoped lang="less">
 .app-header {
   display: flex;
   align-items: center;

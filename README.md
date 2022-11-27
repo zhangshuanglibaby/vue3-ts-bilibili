@@ -1,7 +1,7 @@
 <!--
  * @Date: 2022-11-22 21:41:57
  * @LastEditors: zhangshuangli
- * @LastEditTime: 2022-11-27 15:22:03
+ * @LastEditTime: 2022-11-27 17:22:14
  * @Description: 这是****文件
 -->
 # my-vue3-ts-bilibili
@@ -76,3 +76,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
     在展示图片可能会存在报403防止盗链的错误 在header中添加no-referrer解决
 6. 开发首页视频列表 home-video-list
    抽离app-video-item组件
+7. 开发搜索页面 写了search-top组件 image-mian组件
