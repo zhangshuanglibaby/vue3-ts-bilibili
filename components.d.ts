@@ -7,7 +7,8 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    AppHeader: typeof import('./src/components/appHeader.vue')['default']
+    AppHeader: typeof import('./src/components/AppHeader.vue')['default']
+    AppVideoItem: typeof import('./src/components/AppVideoItem.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     VanSwipe: typeof import('vant/es')['Swipe']

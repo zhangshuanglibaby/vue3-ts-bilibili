@@ -1,7 +1,7 @@
 <!--
  * @Date: 2022-11-25 22:00:51
  * @LastEditors: zhangshuangli
- * @LastEditTime: 2022-11-26 19:14:44
+ * @LastEditTime: 2022-11-26 21:23:39
  * @Description: 这是****文件
 -->
 <template>
@@ -55,14 +55,14 @@ const swipeRef = ref<SwipeInstance>()
 // 定义自动轮播时常
 const autoplay = ref<number>(swiperAutoPlay.PALY)
 // 监听轮播图的切换事件
-const onSwiperChange = (index: number) => {
+const onSwiperChange = () => {
   // console.log(index, 'value')
   // 切换轮播图重新开启自动轮播
   autoplay.value = swiperAutoPlay.PALY
 }
 // 轮播图的点击事件
-const onSwiperClick = (event: any) => {
-  console.log(event, 'event')
+const onSwiperClick = () => {
+  console.log(1, 'event')
 }
 // 指示器的点击事件
 const onIndicatorClick = (index: number) => {

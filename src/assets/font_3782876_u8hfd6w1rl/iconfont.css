@@ -1,8 +1,8 @@
 @font-face {
-  font-family: 'iconfont';  /* Project id 3782876 */
-  src: url('//at.alicdn.com/t/c/font_3782876_gn7d71wul6u.woff2?t=1669528069178') format('woff2'),
-       url('//at.alicdn.com/t/c/font_3782876_gn7d71wul6u.woff?t=1669528069178') format('woff'),
-       url('//at.alicdn.com/t/c/font_3782876_gn7d71wul6u.ttf?t=1669528069178') format('truetype');
+  font-family: "iconfont"; /* Project id 3782876 */
+  src: url('iconfont.woff2?t=1669528101243') format('woff2'),
+       url('iconfont.woff?t=1669528101243') format('woff'),
+       url('iconfont.ttf?t=1669528101243') format('truetype');
 }
 
 .iconfont {
@@ -40,3 +40,4 @@
 .icon-bilibili:before {
   content: "\e6b4";
 }
+
